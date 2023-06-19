@@ -3,7 +3,7 @@ import Input from "../UI/input";
 
 function BookItemForm(props) {
   const amountInputRef = useRef();
-  
+
   const [amountIsValid, setAmountIsValid] = useState(true);
 
   const bookFormSubmit = (event) => {
@@ -19,7 +19,6 @@ function BookItemForm(props) {
       return;
     }
     props.onAddToCart(enteredAmountNumber);
-    console.log("form submitted");
   };
 
   return (
