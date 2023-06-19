@@ -9,7 +9,7 @@ function BookItem(props) {
   const onAddToCartHandler = (amount) => {
     cartCtx.addItem({
       id: props.id,
-      name: props.name,
+      title: props.title,
       amount: amount,
       price: props.price,
     });
